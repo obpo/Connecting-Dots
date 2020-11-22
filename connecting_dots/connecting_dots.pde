@@ -1,11 +1,12 @@
 
-final int radius = 100;
-final int amount = 100;
+final int radius = 110;
+final int amount = 250;
 ArrayList<int[]> dots = new ArrayList();
 
 
 void setup() {
-  size(1024, 512);
+  //size(1024, 512);
+  fullScreen();
   
   stroke(210);
   fill(210);
