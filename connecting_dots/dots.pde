@@ -29,19 +29,15 @@ void reposition() {
     if (dots.get(i)[0] < -5) {
       dots.get(i)[0] = width;
       dots.get(i)[3] *= int(random(1, 3))*2 -3;
+    } else if (dots.get(i)[1] < -5) {
+      dots.get(i)[1] = height;
+      dots.get(i)[2] *= int(random(1, 3))*2 -3;
     }
     
     if (dots.get(i)[0] > width+5) {
       dots.get(i)[0] = 0;
       dots.get(i)[3] *= int(random(1, 3))*2 -3;
-    }
-    
-    if (dots.get(i)[1] < -5) {
-      dots.get(i)[1] = height;
-      dots.get(i)[2] *= int(random(1, 3))*2 -3;
-    }
-    
-    if (dots.get(i)[1] > height+5) {
+    } else if (dots.get(i)[1] > height+5) {
       dots.get(i)[1] = 0;
       dots.get(i)[2] *= int(random(1, 3))*2 -3;
     }
